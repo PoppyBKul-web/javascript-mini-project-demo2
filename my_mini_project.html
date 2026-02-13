@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Papuan Gamester LTD</title> 
+<style> 
+body {  
+    font-family: Arial, sans-serif; 
+    color: #fcf304;
+    background-image: url('Images/cover.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+    p { 
+        font-size: 16px; 
+        color: #fcf304; 
+        } 
+                    </style>
+<script language="javascript"> 
+function Focus(text,pic)  
+{ 
+if (!document.getElementById) return; 
+box=document.getElementById("desc"); 
+box.innerHTML=text; 
+if(pic=="pic1") 
+document.body.style.background = "url(Images/it_products.jpg)"; 
+if(pic=="pic2") 
+document.body.style.background = "url(Images/internet.jpg)"; 
+if(pic=="pic3") 
+document.body.style.background = "url(Images/retail.jpg)"; 
+if(pic=="pic4") 
+document.body.style.background = "url(Images/about_us.jpg)"; 
+document.body.style.backgroundSize= "cover";
+document.body.style.backgroundRepeat= "no-repeat";
+document.body.style.backgroundAttachment= "fixed"; 
+} 
+function LostFocus(text,pic)  
+{ 
+if (!document.getElementById) return; 
+box=document.getElementById("desc"); 
+box.innerHTML=text; 
+if(pic=="pic5") 
+document.body.style.background ="url(Images/cover.jpg)"; 
+} 
+</script> 
+</head> 
+<body bgcolor="skyblue"> 
+<img align="center" src="Images/logo.png" width="420" height="180" border="0"><br> 
+<h1>Welcome to PAPUAN GAMESTER LIMITED!</h1> 
+<p>Follow the links below to learn more about our company and our products. 
+</p> 
+<table border="1" align="center"> 
+<tr> 
+<td ID="cell_products" width="20%"><a href="#" onMouseOut="LostFocus('...','pic5');" 
+onMouseOver="Focus('Information about our Solutions and Services','pic1');"> 
+<b>Solutions & Services</b></a></td> 
+<td ID="cell_internet" width="20%"><a href="#" onMouseOut="LostFocus('...','pic5');" 
+onMouseOver="Focus('See our internet games','pic2');"> 
+<b>Internet Games and Data Center</b></a></td> 
+<td ID="cell_retail" width="20%"><a href="#" onMouseOut="LostFocus('...','pic5');" 
+onMouseOver="Focus('See Retail Offers','pic3');"> 
+<b>Retail Sales</b></a></td> 
+<td ID="cell_about" width="20%"><a href="#" onMouseOut="LostFocus('...','pic5');" 
+onMouseOver="Focus('Learn about our team','pic4');"> 
+<b>About Us</b></a></td> 
+</tr> 
+<tr><td ID="desc" align='center' colspan="5">...</td></tr> 
+</table> 
+<P>Enter your info here</P> 
+<div id="myinfo" STYLE="position: absolute; left: 20; top: 800; width:250; height:150; 
+background-color:rgb(37, 58, 218)"> 
+Poppy B. Kul<BR> 
+Dogg Bee Kul and Bee Real.<BR> 
+Pom Boom City<BR> 
+</div> 
+</body> 
+</html>
